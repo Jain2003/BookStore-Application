@@ -12,9 +12,10 @@ const Header = () => {
     <LibraryBooksIcon/>
     </Typography>
     <Tabs sx={{ml: "auto"}} textColor='inherit' indicatorColor='secondary' value={value} onChange={(e, val)=> setvalue(val)} >
-        <Tab LinkComponent={NavLink} to= "/add" label="Add product" />
-        <Tab LinkComponent={NavLink} to= "/about" label="About Us" />
+    <Tab LinkComponent={NavLink} to= "/" label="Home" />
+        <Tab LinkComponent={NavLink} to= "/add" label="Add Book" />
         <Tab LinkComponent={NavLink} to= "/books" label="See All Books" />
+        <Tab LinkComponent={NavLink} to= "/login" label="Logout" />
     </Tabs>
     </Toolbar>
     </AppBar>

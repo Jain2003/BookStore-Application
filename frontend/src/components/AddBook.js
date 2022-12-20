@@ -13,7 +13,6 @@ const Addbook = () => {
     description:"",
     price:"",
     available: true,
-    image:"",
   });
   const handleChange = (e) =>{
     setInputs((prevState) =>({
@@ -28,7 +27,6 @@ const Addbook = () => {
        author: String(inputs.author),
        description: String(inputs.description),
        price: Number(inputs.price),
-       image: String(inputs.image),
        available: true,
      }).then(res => (res.data));
    };
@@ -50,8 +48,6 @@ const Addbook = () => {
     <TextField value={inputs.description} onChange={handleChange} margin='normal' fullWidth variant="outlined" name="description" />
     <FormLabel>Price</FormLabel>
     <TextField value={inputs.price} onChange={handleChange} type="number" margin='normal' fullWidth variant="outlined" name="price" />
-    <FormLabel>Image-url</FormLabel>
-    <TextField value={inputs.image} onChange={handleChange} margin='normal' fullWidth variant="outlined" name="image" />
     <Button variant="contained" type="submit">Add Book</Button>
     </Box>
     </form>

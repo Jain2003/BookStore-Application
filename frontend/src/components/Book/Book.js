@@ -16,7 +16,6 @@ const Book = (props) => {
     }
   return (
     <div className='card'>
-        <img src={image} alt={name} />
         <article>By {author}</article>
         <h3>{name}</h3>
         <p>{description}</p>

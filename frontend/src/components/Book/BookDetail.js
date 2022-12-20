@@ -22,7 +22,6 @@ const BookDetail = () => {
             author: String(inputs.author),
             description: String(inputs.description),
             price: Number(inputs.price),
-            image: String(inputs.image),
             available: true,
         }).then(res => res.data)
      }
@@ -49,8 +48,6 @@ const BookDetail = () => {
     <TextField value={inputs.description} onChange={handleChange} margin='normal' fullWidth variant="outlined" name="description" />
     <FormLabel>Price</FormLabel>
     <TextField value={inputs.price} onChange={handleChange} type="number" margin='normal' fullWidth variant="outlined" name="price" />
-    <FormLabel>Image-url</FormLabel>
-    <TextField value={inputs.image} onChange={handleChange} margin='normal' fullWidth variant="outlined" name="image" />
     <Button variant="contained" type="submit">Update Book</Button>
     </Box>
     </form>   
