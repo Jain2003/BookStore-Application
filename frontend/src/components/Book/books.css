@@ -16,3 +16,11 @@ li{
     box-shadow: 5px 5px 10px #ccc;
     align-items: center;
 }
+article, h3, p, h2{
+    text-align: center;
+    justify-content: center ;
+}
+
+Button{
+    padding: 20px;
+}
