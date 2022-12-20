@@ -3,7 +3,7 @@ import "./home.css";
 
 const Home = () =>{
     return <div>
-    <h1> The main purpose of this application is to manage an online bookstore where the all the products can be seen, edited, deleted.</h1>
+    <h1> The main purpose of this application is to manage an online bookstore where the all the products can be seen, edited and deleted.</h1>
     <div className="images ">
     <h3>Applications for an easier Life..</h3>
     <img className="image-1" src="https://media.wired.com/photos/5ea306a39d94950008221206/16:9/w_2400,h_1350,c_limit/Cul-bookstore-1220322748.jpg" alt="bookstore" />
